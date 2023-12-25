@@ -1,0 +1,38 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd215daa13, pid=21364, tid=13680
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.9+9 (17.0.9+9) (build 17.0.9+9)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-17.0.9+9 (17.0.9+9, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x38aa13]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:49182 -javaagent:C:\Users\rlagu\eclipse\java-2023-09\eclipse\configuration\org.eclipse.osgi\252\0\.cp\lib\javaagent-shaded.jar -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 ch04.StudentTest
+
+Host: 13th Gen Intel(R) Core(TM) i5-1340P, 16 cores, 15G,  Windows 11 , 64 bit Build 22621 (10.0.22621.2506)
+Time: Mon Dec 25 13:58:13 2023  Windows 11 , 64 bit Build 22621 (10.0.22621.2506) elapsed time: 11.901732 seconds (0d 0h 0m 11s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002b4b0012520):  JavaThread "main" [_thread_in_vm, id=13680, stack(0x000000bdb5f00000,0x000000bdb6000000)]
+
+Stack: [0x000000bdb5f00000,0x000000bdb6000000],  sp=0x000000bdb5ff9720,  free space=997k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x38aa13]
+V  [jvm.dll+0x67ce62]
+V  [jvm.dll+0x38a6de]
+V  [jvm.dll+0x36f8d5]
+V  [jvm.dll+0x3733e5]
+V  [jvm.dll+0x372ea8]
+V  [jvm.dll+0x565345]
+V  [jvm.dll+0x564254]
+V  [jvm.dll+0x386eb2]
